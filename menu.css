@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+}
+.menu__link {
+  display: inline-flex;
+  background-color: #242729;
+  color: white;
+  font-size: 16px;
+  height: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 50px;
+}
+.menu__link:hover {
+  background: var(--primary-color);
+}

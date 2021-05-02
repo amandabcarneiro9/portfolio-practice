@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="menu.css" />
     <title>Amanda's Portfolio</title>
   </head>
   <body>
@@ -18,8 +19,8 @@
       <header>
         <img src="./images/favicon2.png" alt="Amanda's Logo" />
         <nav class="menu">
-          <a class="menu__link" href="#">Home</a>
-          <a class="menu__link" href="#">Skills</a>
+          <a class="menu__link" href="#home">Home</a>
+          <a class="menu__link" href="#skills">Skills</a>
           <a class="menu__link" href="#">Portfolio</a>
           <a class="menu__link" href="#">About me</a>
           <a class="menu__link" href="#">Contact</a>
@@ -27,13 +28,68 @@
       </header>
       <main>
         <section class="home">
+          <a name="home"></a>
           <div class="home__photo">
             <div class="home__photo__presentation">
               Hi, I am
               <h1>Amanda Carneiro.</h1>
-              <br />
-              I'm a Full-stack Web Developer Student.
+              <div class="home__photo__presentation__2">I'm a Full-stack Web Developer Student.</div>
             </div>
+          </div>
+          <div class="home__description">
+            Let's work together to make <strong> your product stand out</strong>. I create beautiful and functional
+            websites.<br />
+            I Work with my clients step by step
+            <strong>from the idea stage until the fully functioning web application</strong>.
+          </div>
+          <div class="values">
+            <div class="value">
+              <h2>Discover</h2>
+              Tell me about your project and we brainstorm together the features to create a plan for your product to
+              launch.
+            </div>
+            <div class="value">
+              <h2>Design</h2>
+              We Design the wireframe and agree together how to create the best experience for your users to present
+              your brand.
+            </div>
+            <div class="value">
+              <h2>Deploy</h2>
+              We prototype and develop your product. We work together intensely to incorporate your feedback.
+            </div>
+            <div class="value">
+              <h2>Be Ready</h2>
+              we deploy your product and now your website is ready to get the traction. Get out there and grow your
+              audience.
+            </div>
+          </div>
+        </section>
+        <section class="skills">
+          <a name="skills"></a>
+          <h2>My Skills</h2>
+          <div class="skill__label">
+            <label for="HTML">HTML</label> <progress id="HTML" value="80" max="100">80%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="CSS, Sass">CSS, Sass</label> <progress id="CSS, Sass" value="80" max="100">80%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="JavaScript">JavaScript</label> <progress id="JavaScript" value="80" max="100">70%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="React">React</label> <progress id="React" value="60" max="100">60%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="jQuery">jQuery</label> <progress id="jQuery" value="70" max="100">70%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="PHP">PHP</label> <progress id="PHP" value="60" max="100">60%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="Laravel">Laravel</label> <progress id="Laravel" value="60" max="100">60%</progress>
+          </div>
+          <div class="skill__label">
+            <label for="UX">UX</label> <progress id="UX" value="50" max="100">50%</progress>
           </div>
         </section>
       </main>

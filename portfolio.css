@@ -1,13 +1,21 @@
+:root {
+  --primary-color: #e14279;
+  --secondary-color: #242729;
+}
 body {
   font-family: "Alegreya Sans", sans-serif;
   margin: 0 auto;
+  background: dimgrey;
 }
 .container {
   margin: 0 auto;
   width: 1200px;
+  background-color: white;
 }
 header {
   display: flex;
+  position: sticky;
+  /* background-color: white; */
 }
 header img {
   height: 48px;
@@ -16,27 +24,9 @@ header img {
 header .menu {
   flex: 1 1 auto;
 }
-.menu {
-  display: flex;
-}
-.menu__link {
-  display: inline-flex;
-  background-color: #242729;
-  color: white;
-  font-size: 12px;
-  height: 48px;
-  text-decoration: none;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 50px;
-}
-.menu__link:hover {
-  background: #69293f;
-}
+
 .home {
   margin-top: 72px;
-  background: violet;
 }
 .home__photo {
   background-image: url("./images/main-photo.jpg");
@@ -51,5 +41,105 @@ h1 {
   margin: 0;
   font-size: 40px;
   border-bottom: solid 8px white;
-  color: #69293f;
+  color: var(--primary-color);
+}
+.home__photo__presentation {
+  color: white;
+  font-size: 40px;
+}
+.home__photo__presentation__2 {
+  font-size: 34px;
+}
+.home__description {
+  text-align: center;
+  font-size: 24px;
+  margin: 64px 0;
+}
+.values {
+  display: flex;
+  padding: 0 140px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+.value {
+  padding: 72px 32px 48px;
+  color: white;
+  position: relative;
+}
+.value:before {
+  content: " ";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 60px);
+  border-radius: 50%;
+}
+.value h2 {
+  color: var(--primary-color);
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72px;
+}
+.skills h2 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+.skill__label {
+  margin-bottom: 8px;
+  display: flex;
+}
+.skill__label:last-child {
+  margin-bottom: 0;
+}
+.skill__label label {
+  display: inline-block;
+  background-color: #242729;
+  color: white;
+  width: 148px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+.skill__label progress {
+  width: 648px;
+  height: 40px;
+  vertical-align: bottom;
+  appearance: none;
+  position: relative;
+}
+.skill__label progress::before,
+.skill__label progress::after {
+  position: absolute;
+  height: 40px;
+  top: 0;
+  line-height: 40px;
+  color: #959595;
+  font-size: 20px;
+}
+.skill__label progress::before {
+  content: attr(value);
+  right: 28px;
+}
+.skill__label progress::after {
+  content: "%";
+  right: 6px;
+}
+
+.skill__label progress[value]::-webkit-progress-bar {
+  background-color: #d6d6d6;
+  border-radius: 0 3px 3px 0;
+}
+.skill__label progress[value]::-webkit-progress-value {
+  background-color: var(--primary-color);
 }
