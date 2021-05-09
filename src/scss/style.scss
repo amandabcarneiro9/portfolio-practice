@@ -1,0 +1,34 @@
+@import "variables";
+@import "media-queries";
+@import "menu";
+@import "home";
+@import "values";
+@import "skills";
+@import "portfolio";
+@import "about-me.scss";
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 0 auto;
+  background: dimgrey;
+}
+.container {
+  background-color: white;
+
+  @include for-desktop {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+header {
+  display: flex;
+  position: sticky;
+  /* background-color: white; */
+}
+header img {
+  height: 48px;
+  margin-right: 96px;
+}
+header .menu {
+  flex: 1 1 auto;
+}
