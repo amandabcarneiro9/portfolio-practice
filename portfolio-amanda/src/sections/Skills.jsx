@@ -1,9 +1,10 @@
 import '../scss/skills.scss'
+import React from 'react'
 
 export default function Skills() {
   return (
-    <section class="skills">
-      <a name="skills"></a>
+    <section className="skills">
+      <a name="skills" />
       <h2>My Skills</h2>
       <div className="skill__label">
         <label htmlFor="HTML">HTML</label>{' '}

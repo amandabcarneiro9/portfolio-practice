@@ -5,6 +5,7 @@ export default function Portfolio() {
   return (
     <section className="portfolio">
       <div className="portfolio__container">
+        <a name="portfolio" />
         <h2>My portfolio</h2>
         <div className="portfolio__container__blocks">
           <div className="portfolio__container__blocks__block">

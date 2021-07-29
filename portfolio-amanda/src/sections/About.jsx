@@ -4,6 +4,7 @@ import imgProfile from '../img/profile-photo.jpg'
 export default function About() {
   return (
     <section className="about-me">
+      <a name="about" />
       <div className="about-me__container">
         <h2>About me</h2>
 

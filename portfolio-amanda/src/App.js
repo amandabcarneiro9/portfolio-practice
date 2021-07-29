@@ -1,4 +1,5 @@
 import './scss/style.scss'
+
 import Header from './sections/header'
 import Home from './sections/home'
 import Skills from './sections/Skills'
