@@ -1,0 +1,48 @@
+.about-me {
+  background-color: #e6e6e6;
+  padding: 30px; }
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about-me__container h2 {
+      font-size: 40px;
+      text-transform: uppercase; }
+    .about-me__container__content {
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
+      @media (max-width: 768px) {
+        .about-me__container__content {
+          flex-direction: column; } }
+      .about-me__container__content img {
+        border-radius: 50%;
+        box-shadow: 2px 2px 16px 6px rgba(51, 51, 51, 0.3);
+        align-self: center; }
+      .about-me__container__content__text {
+        display: flex;
+        flex-direction: column;
+        width: 444px;
+        font-size: 16px; }
+        .about-me__container__content__text em {
+          border-bottom: solid #e14279 5px;
+          font-style: normal; }
+        .about-me__container__content__text span {
+          font-weight: bold;
+          padding-bottom: 28px;
+          font-size: 20px; }
+          @media (max-width: 768px) {
+            .about-me__container__content__text span {
+              text-align: center; } }
+        .about-me__container__content__text button {
+          background-color: #e14279;
+          color: white;
+          border-radius: 5px;
+          box-shadow: 2px 2px 16px 6px rgba(51, 51, 51, 0.3);
+          width: 178px;
+          height: 28px; }
+          @media (max-width: 768px) {
+            .about-me__container__content__text button {
+              align-self: center; } }
+
+/*# sourceMappingURL=about-me.css.map */

@@ -1,0 +1,269 @@
+.menu {
+  display: flex; }
+
+.menu__link {
+  display: inline-flex;
+  background-color: #242729;
+  color: white;
+  font-size: 16px;
+  height: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 50px; }
+
+.menu__link:hover {
+  background: var(--primary-color); }
+
+.home {
+  margin-top: 72px; }
+  .home__photo {
+    background-image: url("/img/main-photo.jpg");
+    height: 416px;
+    padding-top: 96px; }
+  .home__photo__presentation {
+    text-align: center; }
+  .home__photo__presentation {
+    color: white;
+    font-size: 40px; }
+  .home__photo__presentation__2 {
+    font-size: 34px; }
+  .home__description {
+    text-align: center;
+    font-size: 24px;
+    padding: 64px 0;
+    background-color: white;
+    z-index: 1; }
+    @media (max-width: 768px) {
+      .home__description {
+        padding: 46px 108px; } }
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 40px;
+  border-bottom: solid 8px white;
+  color: #e14279; }
+
+.values {
+  display: flex;
+  padding-right: 140px;
+  padding-left: 140px;
+  text-align: center;
+  background-color: #242729;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    .values {
+      flex-direction: column;
+      padding-top: 66px;
+      padding-bottom: 66px; } }
+
+.value {
+  padding: 72px 32px 48px;
+  color: white;
+  position: relative;
+  border-top: none; }
+  @media (max-width: 768px) {
+    .value {
+      padding: 16px 66px 12px; } }
+
+@media (min-width: 769px) {
+  .value:before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    border-radius: 50%; } }
+
+.value h2 {
+  color: #e14279; }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72px; }
+
+.skills h2 {
+  color: #e14279;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 72px;
+  margin-bottom: 72px; }
+
+.skill__label {
+  margin-bottom: 8px;
+  display: flex; }
+  @media (max-width: 768px) {
+    .skill__label {
+      width: 90%; } }
+
+.skill__label:last-child {
+  margin-bottom: 0; }
+
+.skill__label label {
+  display: inline-block;
+  background-color: #242729;
+  color: white;
+  width: 148px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px; }
+  @media (max-width: 768px) {
+    .skill__label label {
+      width: 200px; } }
+
+.skill__label progress {
+  width: 648px;
+  height: 40px;
+  vertical-align: bottom;
+  appearance: none;
+  position: relative; }
+
+.skill__label progress::before,
+.skill__label progress::after {
+  position: absolute;
+  height: 40px;
+  top: 0;
+  line-height: 40px;
+  color: #959595;
+  font-size: 20px; }
+
+.skill__label progress::before {
+  content: attr(value);
+  right: 28px; }
+
+.skill__label progress::after {
+  content: "%";
+  right: 6px; }
+
+.skill__label progress[value]::-webkit-progress-bar {
+  background-color: #d6d6d6;
+  border-radius: 0 3px 3px 0; }
+
+.skill__label progress[value]::-webkit-progress-value {
+  background-color: #e14279; }
+
+.portfolio {
+  background-color: #e14279;
+  padding-bottom: 36px; }
+  .portfolio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .portfolio__container h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      color: white; }
+    .portfolio__container__blocks {
+      display: grid;
+      grid-template-columns: 328px 328px 328px;
+      grid-template-rows: 284px;
+      gap: 14px 14px; }
+      @media (max-width: 768px) {
+        .portfolio__container__blocks {
+          display: flex;
+          flex-direction: column;
+          margin: 24px; } }
+      .portfolio__container__blocks__block {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column; }
+        .portfolio__container__blocks__block:hover {
+          background-color: black; }
+        .portfolio__container__blocks__block__content {
+          flex-grow: 1;
+          background-color: #e6e6e6;
+          margin-top: 8px;
+          font-size: 16px; }
+          @media (max-width: 768px) {
+            .portfolio__container__blocks__block__content {
+              font-size: 26px; } }
+          .portfolio__container__blocks__block__content p {
+            display: inline-block;
+            margin: 20px 28px; }
+          .portfolio__container__blocks__block__content span {
+            display: inline-block;
+            padding-top: 0;
+            padding-bottom: 5px; }
+
+.about-me {
+  background-color: #e6e6e6;
+  padding: 30px; }
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about-me__container h2 {
+      font-size: 40px;
+      text-transform: uppercase; }
+    .about-me__container__content {
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
+      @media (max-width: 768px) {
+        .about-me__container__content {
+          flex-direction: column; } }
+      .about-me__container__content img {
+        border-radius: 50%;
+        box-shadow: 2px 2px 16px 6px rgba(51, 51, 51, 0.3);
+        align-self: center; }
+      .about-me__container__content__text {
+        display: flex;
+        flex-direction: column;
+        width: 444px;
+        font-size: 16px; }
+        .about-me__container__content__text em {
+          border-bottom: solid #e14279 5px;
+          font-style: normal; }
+        .about-me__container__content__text span {
+          font-weight: bold;
+          padding-bottom: 28px;
+          font-size: 20px; }
+          @media (max-width: 768px) {
+            .about-me__container__content__text span {
+              text-align: center; } }
+        .about-me__container__content__text button {
+          background-color: #e14279;
+          color: white;
+          border-radius: 5px;
+          box-shadow: 2px 2px 16px 6px rgba(51, 51, 51, 0.3);
+          width: 178px;
+          height: 28px; }
+          @media (max-width: 768px) {
+            .about-me__container__content__text button {
+              align-self: center; } }
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 0 auto;
+  background: dimgrey; }
+
+.container {
+  background-color: white; }
+  @media (min-width: 769px) {
+    .container {
+      width: 1200px;
+      margin: 0 auto; } }
+
+header {
+  display: flex;
+  position: sticky;
+  /* background-color: white; */ }
+
+header img {
+  height: 48px;
+  margin-right: 96px; }
+
+header .menu {
+  flex: 1 1 auto; }
+
+/*# sourceMappingURL=style.css.map */

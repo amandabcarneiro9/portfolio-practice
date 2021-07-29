@@ -1,0 +1,1 @@
+{"version":3,"file":"media-queries.css","sources":["media-queries.scss"],"sourcesContent":["@mixin for-mobile {\n  @media (max-width: 768px) {\n    @content;\n  }\n}\n\n@mixin for-desktop {\n  @media (min-width: 769px) {\n    @content;\n  }\n}\n"],"names":[],"mappings":""}

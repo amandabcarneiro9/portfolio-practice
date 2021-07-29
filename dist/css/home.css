@@ -1,0 +1,31 @@
+.home {
+  margin-top: 72px; }
+  .home__photo {
+    background-image: url("/img/main-photo.jpg");
+    height: 416px;
+    padding-top: 96px; }
+  .home__photo__presentation {
+    text-align: center; }
+  .home__photo__presentation {
+    color: white;
+    font-size: 40px; }
+  .home__photo__presentation__2 {
+    font-size: 34px; }
+  .home__description {
+    text-align: center;
+    font-size: 24px;
+    padding: 64px 0;
+    background-color: white;
+    z-index: 1; }
+    @media (max-width: 768px) {
+      .home__description {
+        padding: 46px 108px; } }
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 40px;
+  border-bottom: solid 8px white;
+  color: #e14279; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,38 @@
+.values {
+  display: flex;
+  padding-right: 140px;
+  padding-left: 140px;
+  text-align: center;
+  background-color: #242729;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    .values {
+      flex-direction: column;
+      padding-top: 66px;
+      padding-bottom: 66px; } }
+
+.value {
+  padding: 72px 32px 48px;
+  color: white;
+  position: relative;
+  border-top: none; }
+  @media (max-width: 768px) {
+    .value {
+      padding: 16px 66px 12px; } }
+
+@media (min-width: 769px) {
+  .value:before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    border-radius: 50%; } }
+
+.value h2 {
+  color: #e14279; }
+
+/*# sourceMappingURL=values.css.map */
