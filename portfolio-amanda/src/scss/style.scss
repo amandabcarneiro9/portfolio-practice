@@ -5,20 +5,18 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
   margin: 0 auto;
   background: dimgrey;
+  align-items: center;
 }
 .container {
   background-color: white;
+  position: absolute;
 
   @include for-desktop {
     width: 1200px;
     margin: 0 auto;
   }
 }
-header {
-  display: flex;
-  position: sticky;
-  /* background-color: white; */
-}
+
 header img {
   height: 48px;
   margin-right: 96px;

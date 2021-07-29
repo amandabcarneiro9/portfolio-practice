@@ -1,5 +1,5 @@
-@import "variables";
-@import "media-queries";
+@import 'variables';
+@import 'media-queries';
 
 .skills {
   display: flex;
@@ -59,7 +59,7 @@
   right: 28px;
 }
 .skill__label progress::after {
-  content: "%";
+  content: '%';
   right: 6px;
 }
 

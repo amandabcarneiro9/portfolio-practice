@@ -1,3 +1,13 @@
+@import './variables.scss';
+
+header {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  width: 1200px;
+  top: 0;
+}
+
 .menu {
   display: flex;
 }
@@ -11,8 +21,8 @@
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
-  flex: 1 0 50px;
+  flex: 1;
 }
 .menu__link:hover {
-  background: var(--primary-color);
+  background: $primary-color;
 }

@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header>
       <img src={logo} alt="Amanda's Logo" />
-      <nav className="menu">
+      <div className="menu">
         <a className="menu__link" href="#home" onClick={scroll}>
           Home
         </a>
@@ -26,7 +26,7 @@ export default function Header() {
         <a className="menu__link" href="#about" onClick={scroll}>
           About me
         </a>
-      </nav>
+      </div>
     </header>
   )
 }
