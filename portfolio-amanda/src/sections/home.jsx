@@ -1,4 +1,5 @@
 import '../scss/home.scss'
+import Values from './values'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <br />I Work with my clients step by step
         <strong>from the idea stage until the fully functioning web application</strong>.
       </div>
+      <Values />
     </section>
   )
 }

@@ -1,14 +1,8 @@
-@import "variables";
-@import "media-queries";
-@import "menu";
-@import "home";
-@import "values";
-@import "skills";
-@import "portfolio";
-@import "about-me.scss";
+@import 'variables';
+@import 'media-queries';
 
 body {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   margin: 0 auto;
   background: dimgrey;
 }
