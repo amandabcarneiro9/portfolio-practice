@@ -13,7 +13,7 @@ export default function About() {
 
           <div className="about-me__container__content__text">
             <p>
-              My name is Amanda Carneiro. I am a full-stack developer and enjoy learning new trends.
+              My name is Amanda Carneiro. I am a junior full-stack developer and enjoy learning new trends.
               <strong>
                 I am developing user interfaces in JavaScript, React and backend of my projects in PHP and Laravel.
               </strong>
@@ -24,11 +24,9 @@ export default function About() {
               <em> who are as passionate about all web-related as me.</em>
             </p>
 
-            <p>I have worked for clients all across the world but currently I am based in Amsterdam, Netherlands.</p>
+            <p>I can work for clients all across the world but currently I am based in Amsterdam, Netherlands.</p>
 
-            <p>
-              I like dogs, scuba diver and sailing. If I do not develop, you can also meet me trekking in the mountains
-            </p>
+            <p>I like dogs, scuba diver and sailing, and discover the world trough different views.</p>
 
             <span>Get in touch and let's do something great together</span>
 

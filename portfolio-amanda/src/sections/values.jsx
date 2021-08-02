@@ -9,13 +9,12 @@ export default function Values() {
         Tell me about your project and we brainstorm together the features to create a plan for your product to launch.
       </div>
       <div className="value">
-        <h2>Design</h2>
-        We Design the wireframe and agree together how to create the best experience for your users to present your
-        brand.
+        <h2>Design</h2>I can work with a design to develop the wireframe and agree together how to create the best
+        experience for your users to present your brand.
       </div>
       <div className="value">
-        <h2>Deploy</h2>
-        We prototype and develop your product. We work together intensely to incorporate your feedback.
+        <h2>Deploy</h2>I can work intensely to incorporate the best practices of deployment, for instance, guaranteeing
+        that the deploy will work everywhere.
       </div>
       <div className="value">
         <h2>Be Ready</h2>
