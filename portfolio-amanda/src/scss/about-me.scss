@@ -1,5 +1,5 @@
-@import "variables";
-@import "media-queries";
+@import 'variables';
+@import 'media-queries';
 
 .about-me {
   background-color: $third-color;
@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     h2 {
       font-size: 40px;
@@ -33,8 +34,12 @@
       &__text {
         display: flex;
         flex-direction: column;
-        width: 444px;
+        width: 100%;
         font-size: 16px;
+
+        @include for-desktop {
+          width: 60%;
+        }
 
         em {
           border-bottom: solid $primary-color 5px;
