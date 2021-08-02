@@ -1,28 +1,41 @@
 @import './variables.scss';
+@import './media-queries.scss';
 
 header {
   position: fixed;
   display: flex;
   z-index: 1000;
+
   width: 1200px;
   top: 0;
 }
 
 .menu {
-  display: flex;
+  display: none;
+  @include for-desktop {
+    display: flex;
+  }
+  .menu__link {
+    display: inline-flex;
+    background-color: #242729;
+    color: white;
+    font-size: 16px;
+    height: 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .menu__link:hover {
+    background: $primary-color;
+  }
 }
-.menu__link {
-  display: inline-flex;
-  background-color: #242729;
-  color: white;
-  font-size: 16px;
-  height: 48px;
-  text-decoration: none;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-.menu__link:hover {
-  background: $primary-color;
+
+.hamburger-react {
+  display: none;
+
+  @include for-mobile {
+    display: block;
+  }
 }

@@ -1,12 +1,8 @@
 import '../scss/navBar.scss'
+import Burger from './hamburger'
 import logo from '../img/favicon2.png'
 
 export default function Header() {
-  function scroll(event) {
-    event.preventDefault()
-    const element = document.querySelector(`[name=${event.currentTarget.hash.slice(1)}]`)
-    element.scrollIntoView()
-  }
   return (
     <header>
       <img src={logo} alt="Amanda's Logo" />
@@ -27,6 +23,13 @@ export default function Header() {
           About me
         </a>
       </div>
+      <Burger />
     </header>
   )
+}
+
+export function scroll(event) {
+  event.preventDefault()
+  const element = document.querySelector(`[name=${event.currentTarget.hash.slice(1)}]`)
+  element.scrollIntoView()
 }
